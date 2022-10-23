@@ -439,7 +439,7 @@ figcaption p {
 }
 
 .testimonial-users > div {
-    margin-top: 5rem;
+    margin-top: 8rem;
 }
 
 .testimonial-profile-img img {
@@ -672,6 +672,7 @@ figcaption p {
         justify-content: center;
         gap: 5rem;
         font-size: var(--fs-body);
+        margin-bottom: 8rem;
     }
 
 }
