@@ -61,7 +61,7 @@ html {
 }
 
 .container-s {
-    max-width: 110rem;
+    max-width: 120rem;
     margin-inline: auto;
 }
 
@@ -490,6 +490,8 @@ figcaption p {
     margin-block: 3rem;
     display: flex;
     justify-content: space-evenly;
+
+    font-size: var(--fs-client-heading-m);
 }
 
 .footer-nav a {
@@ -539,13 +541,103 @@ figcaption p {
 
 }
 
-.socials:focus {
-
-}
-
 .socials li a {
     display: block;
     height: 100%;
 }
 
 /*endregion*/
+@media (min-width: 45em) {
+
+    body {
+        font-size: var(--fs-body);
+    }
+
+    /*region transform and standout*/
+    .flex {
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+   }
+
+    .flex> * {
+        flex: 1 0 50%;
+        text-align: left;
+    }
+
+    .transform.flex {
+        flex-direction: row-reverse;
+    }
+
+    .transform-content,
+    .stand-out-content {
+        padding: 12rem;
+    }
+
+    .transform-content h2,
+    .stand-out-content h2 {
+        font-size: var(--fs-secondary-heading);
+        padding-inline: 0;
+    }
+    /*endregion*/
+
+    /*region info*/
+    figcaption {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    figcaption div {
+        max-width: 40ch;
+        text-align: center;
+        margin-inline: auto;
+    }
+
+    figcaption h2 {
+        font-size: var(--fs-sub-heading);
+    }
+    /*endregion*/
+
+
+    /*region testimonial*/
+    .testimonial {
+        margin-block: 7rem;
+    }
+
+    .testimonial  h2 {
+        font-size: var(--fs-client-heading);
+    }
+
+    .testimonial-users .user-name {
+        font-size: var(--fs-body);
+    }
+
+    .testimonial-users .user-name + span {
+        font-size: var(--fs-client-heading-m);
+    }
+
+    .testimonial-users {
+        gap: 4rem;
+        display: grid;
+        grid-auto-flow: column;
+    }
+
+    .testimonial-users div {
+        text-align: center;
+    }
+    /*endregion*/
+
+
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+
+    .footer-nav ul {
+        justify-content: center;
+        gap: 5rem;
+
+        font-size: var(--fs-body);
+    }
+
+}
