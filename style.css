@@ -15,7 +15,8 @@ html {
 }
 
 :root {
-    --bg-footer: hsl(168, 34%, 41%);
+    --bg-footer: hsl(167, 44%, 70%);
+    --clr-footer: hsl(168, 34%, 41%);
 
     --clr-heading-primary: hsl(212, 27%, 19%);
     --clr-heading-gray: hsl(213, 9%, 39%);
@@ -489,6 +490,10 @@ figcaption p {
     background: var(--bg-footer);
 }
 
+.footer-logo path {
+    fill: var(--clr-footer);
+}
+
 .footer-nav ul {
     margin-block: 3rem;
     display: flex;
@@ -498,7 +503,7 @@ figcaption p {
 }
 
 .footer-nav a {
-    color: var(--clr-txt-cyan);
+    color: var(--clr-footer);
     outline: 1px solid transparent;
 
     transition: all 150ms ease-in-out;
@@ -533,7 +538,7 @@ figcaption p {
     width: 24px;
     aspect-ratio: 1;
     margin: 0;
-    color: var(--clr-txt-cyan);
+    color: var(--clr-footer);
 
 
     transition: all 150ms ease-in-out;
@@ -666,7 +671,6 @@ figcaption p {
     .footer-nav ul {
         justify-content: center;
         gap: 5rem;
-
         font-size: var(--fs-body);
     }
 

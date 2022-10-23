@@ -16,3 +16,5 @@
 .prettierign
 ore
 design
+/package.json
+/package-lock.json
