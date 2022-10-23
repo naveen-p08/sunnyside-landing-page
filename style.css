@@ -329,6 +329,7 @@ body {
 
 .transform-content p,
 .stand-out-content p {
+    font-size: var(--fs-body-s);
     margin-block: 3rem;
     line-height: 1.5;
 }
@@ -413,6 +414,7 @@ figcaption h2 {
 }
 
 figcaption p {
+    font-size: var(--fs-body-s);
     line-height: 1.5;
 }
 
@@ -435,7 +437,7 @@ figcaption p {
     letter-spacing: 7px;
 }
 
-.testimonial-users div {
+.testimonial-users > div {
     margin-top: 5rem;
 }
 
@@ -445,6 +447,7 @@ figcaption p {
 }
 
 .testimonial-users p {
+    font-size: var(--fs-client-heading-m);
     color: var(--clr-heading-gray);
     margin-block: 3rem;
     line-height: 1.5;
@@ -579,6 +582,17 @@ figcaption p {
         font-size: var(--fs-secondary-heading);
         padding-inline: 0;
     }
+
+    .transform-content p,
+    .stand-out-content p {
+        font-size: var(--fs-body);
+    }
+
+    .transform-content a,
+    .stand-out-content a {
+        font-size: var(--fs-body-s);
+    }
+
     /*endregion*/
 
     /*region info*/
@@ -596,6 +610,10 @@ figcaption p {
     figcaption h2 {
         font-size: var(--fs-sub-heading);
     }
+
+    figcaption p {
+        font-size: var(--fs-body);
+    }
     /*endregion*/
 
 
@@ -604,8 +622,16 @@ figcaption p {
         margin-block: 7rem;
     }
 
+    .testimonial-profile-img img {
+        width: 10rem;
+    }
+
     .testimonial  h2 {
         font-size: var(--fs-client-heading);
+    }
+
+    .testimonial p {
+        font-size: var(--fs-body);
     }
 
     .testimonial-users .user-name {
@@ -622,10 +648,14 @@ figcaption p {
         grid-auto-flow: column;
     }
 
-    .testimonial-users div {
+    .testimonial-users > div {
         text-align: center;
+
+        display: grid;
+        grid-auto-flow: row;
+        align-content: space-between;
     }
-    /*endregion*/
+        /*endregion*/
 
 
     .gallery {
